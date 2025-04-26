@@ -1,0 +1,27 @@
+name: paypal_clone
+description: A PayPal UI clone using Flutter
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.8.0
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.8
+  http: ^1.3.0
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/paypal_logo.png
