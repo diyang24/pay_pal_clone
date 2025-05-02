@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/send_request_buttons.dart'; // Ensure this widget has rounded black buttons
+import 'package:paypal_clone/screens/profile_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,9 +18,18 @@ class HomeScreen extends StatelessWidget {
                   const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Icon(Icons.menu, color: Colors.black),
-                  Icon(Icons.person_outline, color: Colors.black),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ProfilePage()),
+                      );
+                    },
+                    icon: const Icon(Icons.person_outline, color: Colors.black),
+                  ),
                 ],
               ),
             ),
