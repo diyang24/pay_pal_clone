@@ -30,11 +30,108 @@ class ProfilePage extends StatelessWidget {
                 icon: const Icon(Icons.notifications_none, color: Colors.black),
               ),
             ]),
-        backgroundColor: const Color(0xFFF4F6FA),
-        body: ListView.builder(
-          itemCount: 5,
-          itemBuilder: (context, index) =>
-              Padding(padding: const EdgeInsets.all(8.0)),
+        backgroundColor: const Color(0xF2F4F8),
+        body: ListView(
+          padding: EdgeInsets.all(10),
+          children: [
+            Card(
+              margin: EdgeInsets.only(top: 10, bottom: 10),
+              child: ListTile(
+                leading: Icon(
+                  Icons.person_outline,
+                  color: Colors.black,
+                ),
+              ),
+              color: Colors.white,
+            ),
+            Card(
+              margin: EdgeInsets.only(top: 10, bottom: 10),
+              child: Column(
+                children: [
+                  ListTile(
+                    leading: Icon(
+                      Icons.person_outline,
+                      color: Colors.black,
+                    ),
+                    title: Text("Personal Info"),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.shield_outlined,
+                      color: Colors.black,
+                    ),
+                    title: Text("Login and Security"),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.visibility_outlined,
+                      color: Colors.black,
+                    ),
+                    title: Text("Data and Privacy"),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.notifications_active_outlined,
+                      color: Colors.black,
+                    ),
+                    title: Text("Notification Preferences"),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.attach_money_outlined,
+                      color: Colors.black,
+                    ),
+                    title: Text("Marketing Preferences"),
+                  ),
+                ],
+              ),
+              color: Colors.white,
+            ),
+            Card(
+              margin: EdgeInsets.only(top: 10, bottom: 10),
+              child: Column(
+                children: [
+                  ListTile(
+                    leading: Icon(
+                      Icons.message_outlined,
+                      color: Colors.black,
+                    ),
+                    title: Text("Message Center"),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      Icons.help_outline,
+                      color: Colors.black,
+                    ),
+                    title: Text("Help"),
+                  ),
+                ],
+              ),
+              color: Colors.white,
+            ),
+            Card(
+              margin: EdgeInsets.only(top: 10, bottom: 10),
+              child: ListTile(
+                leading: Icon(
+                  Icons.delete_outline,
+                  color: Colors.black,
+                ),
+                title: Text("Close your Account"),
+              ),
+              color: Colors.white,
+            ),
+            Card(
+              margin: EdgeInsets.only(top: 10, bottom: 10),
+              child: ListTile(
+                leading: Icon(
+                  Icons.logout_outlined,
+                  color: Colors.black,
+                ),
+                title: Text("Log Out"),
+              ),
+              color: Colors.white,
+            )
+          ],
         ));
   }
 }

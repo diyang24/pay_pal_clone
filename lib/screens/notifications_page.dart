@@ -19,9 +19,17 @@ class NotificationsPage extends StatelessWidget {
           ),
         ),
         backgroundColor: const Color(0xFFF4F6FA),
-        body: SingleChildScrollView(
-          child: Column(),
-        ));
-       
+        body: ListView(
+            padding: EdgeInsets.all(10),
+            children: List.generate(5, (index) {
+              return Card(
+                child: ListTile(
+                  leading: Icon(
+                    Icons.person_outline,
+                    color: Colors.black,
+                  ),
+                ),
+              );
+            })));
   }
 }
