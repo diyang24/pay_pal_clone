@@ -31,7 +31,7 @@ class ProfilePage extends StatelessWidget {
               icon: const Icon(Icons.notifications_none, color: Colors.black),
             ),
           ]),
-      backgroundColor: const Color(0xF2F4F8),
+      backgroundColor: const Color(0xFFF4F6FA),
       body: ListView(
         padding: EdgeInsets.all(10),
         children: [
@@ -55,6 +55,7 @@ class ProfilePage extends StatelessWidget {
                     Icons.person_outline,
                     color: Colors.black,
                   ),
+                  contentPadding: EdgeInsets.only(top: 5, left: 16),
                   title: Text("Personal Info"),
                 ),
                 ListTile(
@@ -83,6 +84,7 @@ class ProfilePage extends StatelessWidget {
                     Icons.monetization_on_outlined,
                     color: Colors.black,
                   ),
+                  contentPadding: EdgeInsets.only(left: 16, bottom: 5),
                   title: Text("Marketing Preferences"),
                 ),
               ],
@@ -98,6 +100,7 @@ class ProfilePage extends StatelessWidget {
                     Icons.message_outlined,
                     color: Colors.black,
                   ),
+                  contentPadding: EdgeInsets.only(top: 5, left: 15),
                   title: Text("Message Center"),
                 ),
                 ListTile(
@@ -105,6 +108,7 @@ class ProfilePage extends StatelessWidget {
                     Icons.help_outline,
                     color: Colors.black,
                   ),
+                  contentPadding: EdgeInsets.only(left: 15, bottom: 5),
                   title: Text("Help"),
                 ),
               ],
@@ -136,6 +140,17 @@ class ProfilePage extends StatelessWidget {
               },
             ),
             color: Colors.white,
+          ),
+          ListTile(
+            title: Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Legal Agreements",
+                style: TextStyle(
+                    color: Colors.deepPurpleAccent,
+                    fontWeight: FontWeight.w500),
+              ),
+            ),
           )
         ],
       ),

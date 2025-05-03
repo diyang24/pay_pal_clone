@@ -20,20 +20,18 @@ class MenuPage extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: const Color(0xF2F4F8),
+      backgroundColor: const Color(0xFFF4F6FA),
       body: Container(
-        color: Color(0xF2F4F8),
         child: ListView(
           padding: EdgeInsets.all(10),
           children: [
             ListTile(
               title: Text(
                 "Manage Finances",
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
               ),
             ),
             Card(
-              margin: EdgeInsets.only(top: 0, bottom: 10),
               child: Column(
                 children: [
                   ListTile(
@@ -41,6 +39,7 @@ class MenuPage extends StatelessWidget {
                       Icons.smartphone_sharp,
                       color: Colors.black,
                     ),
+                    contentPadding: EdgeInsets.only(top: 5, left: 15),
                     title: Text("Payment Preferences"),
                   ),
                   ListTile(
@@ -51,20 +50,21 @@ class MenuPage extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
+                    contentPadding: EdgeInsets.only(left: 15, bottom: 5),
                     title: Text("Add Banks and Cards"),
                   )
                 ],
               ),
               color: Colors.white,
+              borderOnForeground: true,
             ),
             ListTile(
               title: Text(
                 "Send and Pay",
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
               ),
             ),
             Card(
-              margin: EdgeInsets.only(top: 0, bottom: 10),
               child: Column(
                 children: [
                   ListTile(
@@ -72,6 +72,7 @@ class MenuPage extends StatelessWidget {
                       Icons.send_rounded,
                       color: Colors.black,
                     ),
+                    contentPadding: EdgeInsets.only(top: 5, left: 15),
                     title: Text("Send to a Paypal "),
                   ),
                   ListTile(
@@ -79,6 +80,7 @@ class MenuPage extends StatelessWidget {
                       Icons.credit_card_outlined,
                       color: Colors.black,
                     ),
+                    contentPadding: EdgeInsets.only(left: 15),
                     title: Text("Send to a Debit card"),
                   ),
                   ListTile(
@@ -86,6 +88,7 @@ class MenuPage extends StatelessWidget {
                       Icons.description_outlined,
                       color: Colors.black,
                     ),
+                    contentPadding: EdgeInsets.only(left: 15, bottom: 5),
                     title: Text("Pay Bills"),
                   ),
                 ],
@@ -95,11 +98,10 @@ class MenuPage extends StatelessWidget {
             ListTile(
               title: Text(
                 "Get Paid",
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
               ),
             ),
             Card(
-              margin: EdgeInsets.only(top: 0, bottom: 10),
               child: Column(
                 children: [
                   ListTile(
@@ -107,6 +109,7 @@ class MenuPage extends StatelessWidget {
                       FontAwesomeIcons.moneyBillWave,
                       color: Colors.black,
                     ),
+                    contentPadding: EdgeInsets.only(top: 5, left: 15),
                     title: Text("Request Money"),
                   ),
                   ListTile(
@@ -114,6 +117,7 @@ class MenuPage extends StatelessWidget {
                       Icons.pie_chart_outline,
                       color: Colors.black,
                     ),
+                    contentPadding: EdgeInsets.only(left: 15, bottom: 5),
                     title: Text("Split the bill"),
                   ),
                 ],
@@ -123,11 +127,10 @@ class MenuPage extends StatelessWidget {
             ListTile(
               title: Text(
                 "Profile and Support",
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
               ),
             ),
             Card(
-              margin: EdgeInsets.only(top: 0, bottom: 10),
               child: Column(
                 children: [
                   ListTile(
@@ -135,6 +138,7 @@ class MenuPage extends StatelessWidget {
                       Icons.person_outline_rounded,
                       color: Colors.black,
                     ),
+                    contentPadding: EdgeInsets.only(top: 5, left: 15),
                     title: Text("Your Profile"),
                     onTap: () {
                       Navigator.push(
@@ -148,6 +152,7 @@ class MenuPage extends StatelessWidget {
                       Icons.account_balance_wallet_outlined,
                       color: Colors.black,
                     ),
+                    contentPadding: EdgeInsets.only(left: 15, bottom: 5),
                     title: Text("Your Wallet"),
                   )
                 ],
