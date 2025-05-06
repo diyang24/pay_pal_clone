@@ -25,3 +25,6 @@ flutter:
 
   assets:
     - assets/images/paypal_logo.png
+    - assets/images/ken.jpg
+    - assets/images/kit.jpg
+    - assets/images/justin.jpg

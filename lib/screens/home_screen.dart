@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Text(
-                          '₱0.00',
+                          '₱10,000.00',
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,

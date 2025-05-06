@@ -38,13 +38,20 @@ class ProfilePage extends StatelessWidget {
                 padding: EdgeInsets.all(10),
                 children: [
                   Card(
-                    margin: EdgeInsets.only(top: 10, bottom: 10),
-                    child: ListTile(
-                      contentPadding: EdgeInsets.all(100),
-                      leading: Icon(
-                        Icons.person_outline,
-                        color: Colors.black,
-                      ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        SizedBox(
+                          height: 230,
+                          child: Center(
+                            child: CircleAvatar(
+                              radius: 40,
+                              backgroundImage:
+                                  AssetImage('assets/images/justin.jpg'),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     color: Colors.white,
                   ),

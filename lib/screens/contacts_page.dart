@@ -23,19 +23,56 @@ class ContactsPage extends StatelessWidget {
         ),
         body: RefreshIndicator(
             child: Container(
-              child: Title(
-                  color: Colors.black,
-                  title: "Your Contacts",
-                  child: Column(
-                    children: [
-                      ListTile(
-                          leading: Icon(Icons.person),
-                          title: Text("John Adrian Regana"),
-                          subtitle: Text("@diyang3"),
-                          trailing:
-                              Icon(Icons.info_outline, color: Colors.black))
-                    ],
-                  )),
+              width: 500,
+              child: ListView(
+                children: [
+                  ListTile(
+                    contentPadding:
+                        EdgeInsets.only(left: 20, top: 5, bottom: 5),
+                    title: Title(
+                      color: Colors.black,
+                      child: Text(
+                        "Your contacts",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w600),
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    leading: CircleAvatar(
+                      backgroundImage: AssetImage('assets/images/ken.jpg'),
+                    ),
+                    title: Text("Ken Joshua Cabelin"),
+                    subtitle: Text("@ken23"),
+                    trailing: Icon(
+                      Icons.info_outline,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  ListTile(
+                    leading: CircleAvatar(
+                      backgroundImage: AssetImage('assets/images/kit.jpg'),
+                    ),
+                    title: Text("Kit Balais"),
+                    subtitle: Text("@balais19"),
+                    trailing: Icon(
+                      Icons.info_outline,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  ListTile(
+                    leading: CircleAvatar(
+                      backgroundImage: AssetImage('assets/images/justin.jpg'),
+                    ),
+                    title: Text("Justin Paul Permejo"),
+                    subtitle: Text("@hersch"),
+                    trailing: Icon(
+                      Icons.info_outline,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ],
+              ),
             ),
             color: Colors.black,
             backgroundColor: Colors.white,
