@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:paypal_clone/screens/profile_page.dart';
+import 'package:paypal_clone/screens/contacts_page.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({super.key});
@@ -77,6 +78,13 @@ class MenuPage extends StatelessWidget {
                           ),
                           contentPadding: EdgeInsets.only(top: 5, left: 15),
                           title: Text("Send to a Paypal "),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const ContactsPage()));
+                          },
                         ),
                         ListTile(
                           leading: Icon(
@@ -115,6 +123,13 @@ class MenuPage extends StatelessWidget {
                           ),
                           contentPadding: EdgeInsets.only(top: 5, left: 15),
                           title: Text("Request Money"),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const ContactsPage()));
+                          },
                         ),
                         ListTile(
                           leading: Icon(

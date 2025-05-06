@@ -45,7 +45,12 @@ class SendRequestButtons extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ContactsPage()));
+            },
             child: const Text(
               "Request",
               style: TextStyle(
