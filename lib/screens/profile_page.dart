@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:paypal_clone/screens/notifications_page.dart';
 import 'package:paypal_clone/screens/login_page.dart';
+import 'package:paypal_clone/screens/logsec_page.dart';
+import 'package:paypal_clone/screens/actinfo_page.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -60,20 +62,32 @@ class ProfilePage extends StatelessWidget {
                     child: Column(
                       children: [
                         ListTile(
-                          leading: Icon(
-                            Icons.person_outline,
-                            color: Colors.black,
-                          ),
-                          contentPadding: EdgeInsets.only(top: 5, left: 16),
-                          title: Text("Personal Info"),
-                        ),
+                            leading: Icon(
+                              Icons.person_outline,
+                              color: Colors.black,
+                            ),
+                            contentPadding: EdgeInsets.only(top: 5, left: 16),
+                            title: Text("Personal Info"),
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const ActInfoPage()));
+                            }),
                         ListTile(
-                          leading: Icon(
-                            Icons.shield_outlined,
-                            color: Colors.black,
-                          ),
-                          title: Text("Login and Security"),
-                        ),
+                            leading: Icon(
+                              Icons.shield_outlined,
+                              color: Colors.black,
+                            ),
+                            title: Text("Login and Security"),
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const LogsecPage()));
+                            }),
                         ListTile(
                           leading: Icon(
                             Icons.visibility_outlined,
