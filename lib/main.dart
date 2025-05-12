@@ -22,7 +22,7 @@ class PayPalCloneApp extends StatelessWidget {
         '/login': (context) => const LoginPage(),
         '/home': (context) => const HomeScreen(),
         '/navBar': (context) => const CustomNavBar(),
-        // '/home': (context) => const HomePage(), there is no homepage page
+        // '/home': (context) => const HomePage(), there is no homepage pagefdfasfd
       },
     );
   }
