@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paypal_clone/screens/contacts_page.dart';
 
 class SendRequestButtons extends StatelessWidget {
   const SendRequestButtons({super.key});
@@ -17,7 +18,12 @@ class SendRequestButtons extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ContactsPage()));
+            },
             child: const Text(
               "Send",
               style: TextStyle(
@@ -39,7 +45,12 @@ class SendRequestButtons extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ContactsPage()));
+            },
             child: const Text(
               "Request",
               style: TextStyle(
