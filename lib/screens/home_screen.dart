@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/send_request_buttons.dart'; // Ensure this widget has rounded black buttons
+import '../widgets/send_request_buttons.dart';
 import 'package:paypal_clone/screens/menu_page.dart';
 import 'package:paypal_clone/screens/profile_page.dart';
 
@@ -45,6 +45,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
+            // Balance Card
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: Container(
@@ -97,27 +98,6 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 16),
           ],
         ),
-      ),
-
-      // Bottom Nav Bar
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.grey,
-        backgroundColor: Colors.white,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.attach_money),
-            label: "Payments",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_balance_wallet),
-            label: "Wallet",
-          ),
-        ],
       ),
     );
   }
